@@ -2,87 +2,84 @@
 
 ## Identified Problem or Need
 
-Replace this text with a clearly stated problem or need that exists that your project will attempt to solve / fulfil.
+traking who comes in for walk ins and bookings
 
 
 ## End-User Requirements
 
-Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
+my mum whats to keep it simpale enought to use match there colours .
 
 
 ## Proposed Solution
 
-Replace this text with a brief statement about the system that you intend to create, including the key functionality it should have.
+a list of names, time they came in, what they getting and a way to let the user know that its coming up 
 
 
 # Relevant Implications
 
 ## NAME OF IMPLICATION 1
 
-Replace this text with a clear explanation of what the implication means.
+privacy, keeping data from the public
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+it keeps people knowing what others are getting
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+make a button to show peoples detailes like there is a box with the person name then a blured box with a lock on it u press the lock to revil the rest of the detailes like what there getting
 
 
 
 ## NAME OF IMPLICATION 2
 
-Replace this text with a clear explanation of what the implication means.
-
+Aesthetics coulor nicely
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+kepping tcc colour costeted throw out the hole thing
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+try and get there colours acureit and in good places
 
 
 
 ## NAME OF IMPLICATION 3
 
-Replace this text with a clear explanation of what the implication means.
+uesbuilty keeping it good to use
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+just a comple buttons with names and typing area
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+make buttons big and easy to know what they do
 
 
 
 ## NAME OF IMPLICATION 4
 
-Replace this text with a clear explanation of what the implication means.
+ End User trying to get it to what they what
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+keep it close to what my mum whould think it whould look like and do
 
 ### Impact / Considerations
-
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+this whould keep it closer to tcc and how it whould run
 
 
 
 ## NAME OF IMPLICATION 5
-
-Replace this text with a clear explanation of what the implication means.
+ Functionality make sure it did not break
 
 ### Relevance to the System
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+making sure my cool buttons work and go to right place
 
 ### Impact / Considerations
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+this will keep user happy that it gose to where it needs to go.
 
 
