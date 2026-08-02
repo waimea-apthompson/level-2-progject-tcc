@@ -14,7 +14,6 @@ Develop a design for the database and a UI prototype that simulates the key func
     - Fields / types
     - Primary keys
     - Default / nullable values
-    - Relationships (foreign keys)
 - Design the UI
     - Key pages
     - User interactions and 'flow'
@@ -28,15 +27,14 @@ Develop a design for the database and a UI prototype that simulates the key func
 Replace this text with notes regarding the DB design.
 
 ![DB Design](screenshots/placeholder.png)
-
+![DB Design](screenshots/db_v1.png)
+![DB Design](screenshots/tcc.png)
 
 ### Required Data Input
-
-Replace this text with a description of what data will be input, and where / how it will be obtained.
+the data that will go into this will be phone number, name, what thier getting so we know who came in how to contaced them and see if they can get what they want anytime soon
 
 ### Required Data Output
-
-Replace this text with a description of the outputs for the system - what types of data will be displayed?
+thier names will be dispalyed to show the user who it is but have thier phone number and what there getting behied a blured box with a lock on it so other people cant see thier personal stuff
 
 ### Required Data Processing
 
