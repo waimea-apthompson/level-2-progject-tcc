@@ -29,7 +29,7 @@ Replace this text with notes regarding the DB design.
 ![DB Design](screenshots/placeholder.png)
 ![DB Design](screenshots/db_v1.png)
 ![DB Design](screenshots/tcc.png)
-
+![Alt text](screenshots/design_v1.png)
 ### Required Data Input
 the data that will go into this will be phone number, name, what thier getting so we know who came in how to contaced them and see if they can get what they want anytime soon
 
@@ -37,8 +37,8 @@ the data that will go into this will be phone number, name, what thier getting s
 thier names will be dispalyed to show the user who it is but have thier phone number and what there getting behied a blured box with a lock on it so other people cant see thier personal stuff
 
 ### Required Data Processing
+depeding on what time they come in and what time it is or later make it go to top of list in witch is what get processed has weel has name phone number and what they getting
 
-Replace this text with a description of how the data will be processed to achieve the desired output(s) - any processes / formulae?
 
 
 ## UI 'Flow'
