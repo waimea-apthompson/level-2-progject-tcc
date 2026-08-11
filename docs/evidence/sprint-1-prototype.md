@@ -82,9 +82,10 @@ i have talked to my mummy and she siad to put a drop down window for what they g
 
 ## Refined UI Prototype
 
-Having established the layout of the UI screens, the prototype was refined visually, in terms of colour, fonts, etc.
+my mummy siad its fine but change some of the colours around and diffrent font and that its up to me
 
 This Figma demo shows the UI with refinements applied:
+![Alt text](screenshots/design_v3.png)
 
 *FIGMA REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
