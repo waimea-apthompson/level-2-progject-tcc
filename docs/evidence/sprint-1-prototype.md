@@ -26,10 +26,9 @@ Develop a design for the database and a UI prototype that simulates the key func
 
 Replace this text with notes regarding the DB design.
 
-![DB Design](screenshots/placeholder.png)
+
 ![DB Design](screenshots/db_v1.png)
-![DB Design](screenshots/tcc.png)
-![Alt text](screenshots/design_v1.png)
+
 ### Required Data Input
 the data that will go into this will be phone number, name, what thier getting so we know who came in how to contaced them and see if they can get what they want anytime soon
 
@@ -46,16 +45,17 @@ depeding on what time they come in and what time it is or later make it go to to
 The first stage of prototyping was to explore how the UI might 'flow' between states, based on the required functionality.
 
 This Figma demo shows the initial design for the UI 'flow':
+![Alt text](screenshots/design_v0.png)
 
-**FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT**
 
 ### Testing
+its a very nice and easy to under stand the flow of my ui with boxes witch will have text and aroows to help people
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
 
 ### Changes / Improvements
+i made some improvments by putting arrows and text in boxes 
 
-Replace this text with notes any improvements you made as a result of the testing.
+![Alt text](screenshots/design_v0.5.png)
 
 *IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
@@ -65,17 +65,18 @@ Replace this text with notes any improvements you made as a result of the testin
 The next stage of prototyping was to develop the layout for each screen of the UI.
 
 This Figma demo shows the initial layout design for the UI:
-
+![Alt text](screenshots/design_v1.png)
 *FIGMA PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
-
+Replace this text with notes about what you did to test the UI flow and the outcome of the testing. 
+i made it so u cant see what people are getting if you dont have a key for it and a way to enter detales
 ### Changes / Improvements
 
 Replace this text with notes any improvements you made as a result of the testing.
-
+i have talked to my mummy and she siad to put a drop down window for what they getting and make it say what kind of trements
+![Alt text](screenshots/design_v2.jpeg)
 *FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
 
