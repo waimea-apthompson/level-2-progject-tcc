@@ -1,6 +1,6 @@
 #===========================================================
-# PROJECT NAME HERE
-# By YOUR NAME HERE
+# level-2-progject-tcc
+# By austin thompson
 #===========================================================
 
 from flask import Flask, request, session, render_template, flash, redirect, send_file, make_response
@@ -24,21 +24,15 @@ app = Flask(__name__)
 # Home page - Show all notes
 #-----------------------------------------------------------
 @app.get("/")
-def show_notes():
+def show_tcc():
     with connect_db() as db:
         sql = """
             SELECT id, title, body, pinned, created
-            FROM note
+            FROM tcc
             ORDER BY pinned DESC, created DESC
         """
         params = ()
         notes = db.execute(sql, params).fetchall()
-
-        flash("Test message")
-        flash("Test SUCCESS message", "success")
-        flash("Test INFO message", "info")
-        flash("Test WARNING message", "warning")
-        flash("Test ERROR message", "error")
 
         return render_template("pages/note_list.jinja", notes=notes)
 
