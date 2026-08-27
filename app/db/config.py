@@ -15,22 +15,24 @@
 #     SEED_DATA = "INSERT INTO name (...)" or None
 #----------------------------------------------------------------------------
 
-class NoteTable:
 
-    NAME = "note"
+
+class bookingsTable:
+
+    NAME = "bookings"
 
     SCHEMA = """
-        CREATE TABLE note (
+        CREATE TABLE bookings (
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            title   TEXT NOT NULL,
-            body    TEXT,
-            pinned  INTEGER DEFAULT 0,
-            created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            booking_id   INTEGER SECONDRY KEY
+            name   TEXT NOT NULL,
+            phone number    INT
+            
         )
     """
 
     SEED_DATA = """
-        INSERT INTO note (title, pinned, body)
+        INSERT INTO bookings (name, phone number)
         VALUES
             ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
             ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
@@ -38,6 +40,31 @@ class NoteTable:
             ("Recipe: Pasta", 0, "Ingredients:\n- 500g pasta\n- Tomato sauce\n- Garlic\n\nCook pasta, add sauce, enjoy!"),
             ("Important!",    1, "Remember to backup your database regularly.")
     """
+
+
+class presnolinfoTable:
+
+    NAME = "presnol info"
+
+    SCHEMA = """
+        CREATE TABLE presnol info (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            booking_id   INTEGER SECONDRY KEY,
+            name   TEXT NOT NULL,
+            phone number    INT
+            
+        )
+    """
+
+    SEED_DATA = """
+        INSERT INTO presnol info (booking_id, name, phone number)
+        VALUES
+            (1  "ken", "1598336203"),
+            (2, "austin", "83268756129"),
+            (3, "bob", "6254141104872"),
+    """
+
+    
 
 # Add more table classes here...
 
@@ -59,7 +86,8 @@ class NoteTable:
 #----------------------------------------------------------------------------
 
 TABLES = [
-    NoteTable,
+    presnolinfoTable,
+    bookingsTable
     # Add more tables here...
 ]
 
