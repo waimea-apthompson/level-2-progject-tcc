@@ -13,11 +13,11 @@
 
         {% for note in notes %}
 
-            <div class="note {{ 'pinned' if note.pinned }}">
+            <div class="tcc ">
 
                 <header>
-                    <h3>{{ note.title }}</h3>
-                    {{ "📌" if note.pinned }}
+                    <h3>{{ name }}</h3>
+                   
                 </header>
 
                 <p>{{ note.body | paragraphs }}</p>

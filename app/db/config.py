@@ -24,15 +24,17 @@ class bookingsTable:
     SCHEMA = """
         CREATE TABLE bookings (
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            booking_id   INTEGER SECONDRY KEY
             name   TEXT NOT NULL,
-            phone number    INT
+            phone_number    INTEGER,
+            what_they_getting TEXT NOT NULL,
+
             
+
         )
     """
 
     SEED_DATA = """
-        INSERT INTO bookings (name, phone number)
+        INSERT INTO bookings (name, phone number, what_they_getting)
         VALUES
             ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
             ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
@@ -49,19 +51,22 @@ class presnolinfoTable:
     SCHEMA = """
         CREATE TABLE presnol info (
             id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            booking_id   INTEGER SECONDRY KEY,
+            booking_id   INTEGER NOT NULL,
             name   TEXT NOT NULL,
-            phone number    INT
+            phone_number    INTEGER,
+            what_they_getting TEXT NOT NULL,
+
+            FOREIGN KEY (booking_id) REFERENCES bookings(id)
             
         )
     """
 
     SEED_DATA = """
-        INSERT INTO presnol info (booking_id, name, phone number)
+        INSERT INTO presnol info (booking_id, name, phone number, what_they_getting)
         VALUES
-            (1  "ken", "1598336203"),
-            (2, "austin", "83268756129"),
-            (3, "bob", "6254141104872"),
+            (1  "ken", "1598336203", "lazer"),
+            (2, "austin", "83268756129", "lazer"),
+            (3, "bob", "6254141104872", "lazer"),
     """
 
     
