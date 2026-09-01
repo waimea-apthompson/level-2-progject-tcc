@@ -16,58 +16,54 @@
 #----------------------------------------------------------------------------
 
 
+class people_table:
 
-class bookingsTable:
+    NAME = "people"
+
+    SCHEMA = """
+        CREATE TABLE people (
+            id      INTEGER PRIMARY KEY AUTOINCREMENT,
+            name    TEXT NOT NULL,
+            phone   TEXT NOT NULL,
+            notes   TEXT
+        )
+    """
+
+    SEED_DATA = """
+        INSERT INTO people (name, phone, notes)
+        VALUES
+            ("Ken", "1598336203", ""),
+            ("Austin", "83268756129", "likes coffee"),
+            ("Bob", "6254141104872", "has a nut allergy")
+    """
+
+
+class bookings_table:
 
     NAME = "bookings"
 
     SCHEMA = """
         CREATE TABLE bookings (
-            id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            name   TEXT NOT NULL,
-            phone_number    INTEGER,
-            what_they_getting TEXT NOT NULL,
+            id          INTEGER PRIMARY KEY AUTOINCREMENT,
+            person_id   INTEGER NOT NULL,
+            date        TEXT NOT NULL,
+            time        TEXT NOT NULL,
+            treatment   TEXT NOT NULL,
 
-            
-
+            FOREIGN KEY (person_id) REFERENCES people(id)
         )
     """
 
     SEED_DATA = """
-        INSERT INTO bookings (name, phone number, what_they_getting)
+        INSERT INTO bookings (person_id, date, time, treatment)
         VALUES
-            ("Welcome!",      1, "This is a demo application using Flask, Jinja and SQLite."),
-            ("Shopping List", 0, "Milk\nBread\nEggs\nCheese"),
-            ("Meeting Notes", 0, "Discussed project timeline.\n\nAction items:\n- Review design\n- Update docs"),
-            ("Recipe: Pasta", 0, "Ingredients:\n- 500g pasta\n- Tomato sauce\n- Garlic\n\nCook pasta, add sauce, enjoy!"),
-            ("Important!",    1, "Remember to backup your database regularly.")
+            (1, "2026-11-01", "16:00", "Laser"),
+            (1, "2026-18-01", "15:00", "Laser follow-up"),
+            (2, "2026-19-01", "16:00", "Laser"),
+            (3, "2026-09-01", "16:00", "Laser"),
+            (2, "2026-12-01", "16:00", "Laser")
     """
 
-
-class presnolinfoTable:
-
-    NAME = "presnol info"
-
-    SCHEMA = """
-        CREATE TABLE presnol info (
-            id      INTEGER PRIMARY KEY AUTOINCREMENT,
-            booking_id   INTEGER NOT NULL,
-            name   TEXT NOT NULL,
-            phone_number    INTEGER,
-            what_they_getting TEXT NOT NULL,
-
-            FOREIGN KEY (booking_id) REFERENCES bookings(id)
-            
-        )
-    """
-
-    SEED_DATA = """
-        INSERT INTO presnol info (booking_id, name, phone number, what_they_getting)
-        VALUES
-            (1  "ken", "1598336203", "lazer"),
-            (2, "austin", "83268756129", "lazer"),
-            (3, "bob", "6254141104872", "lazer"),
-    """
 
     
 
@@ -91,8 +87,8 @@ class presnolinfoTable:
 #----------------------------------------------------------------------------
 
 TABLES = [
-    presnolinfoTable,
-    bookingsTable
+    people_table,
+    bookings_table
     # Add more tables here...
 ]
 
