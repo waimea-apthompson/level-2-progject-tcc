@@ -91,16 +91,16 @@ This Figma demo shows the UI with refinements applied:
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing.
+i made it so some but are typeabull and some take you back amd forth frome the pages
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+i made it so the treament box is a drop down box and not a typing one
 
 *FIGMA IMPROVED REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
 
 ## Sprint Review
 
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+this made it easyer to fine what you what and kinda of know and for the staff to know if i didnt do a drop down box the staff might get a requse and cant tell what they what 
 

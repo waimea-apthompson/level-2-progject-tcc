@@ -1,0 +1,49 @@
+{#=====================================================
+  Home page
+=====================================================#}
+
+{% extends 'pages/_base.jinja' %}
+
+
+{% block content %}
+
+    <h2>the cosmedic clinic</h2>
+
+    <form method="post" action="/tcc/new">
+    
+    <label>
+    name
+    <input type="text" name="name" required>
+
+    </label>
+
+
+    <label>
+    phone
+    <input type="text" name="phone number" required>
+
+    </label>
+    
+    <label>
+    date
+    <input type="text" name="date" required>
+
+    </label>
+    
+    <label>
+    time
+    <input type="text" name="time" required>
+
+    </label>
+
+    <label>
+    treament
+    <input type="text" name="treatment" required>
+    
+    </label>
+
+    </form>
+
+   
+{% endblock %}
+
