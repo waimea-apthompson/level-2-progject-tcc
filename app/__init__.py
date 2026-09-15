@@ -24,15 +24,53 @@ app = Flask(__name__)
 #-----------------------------------------------------------
 @app.get("/")
 def show_welcome():
-    return render_template("pages/welcome.jinja")
-
+    
+    return render_template("pages/tcc_form.jinja")
+    
 
 #-----------------------------------------------------------
 # new opintment
 #-----------------------------------------------------------
 @app.get("/tcc/new")
 def show_tcc_form():
-    return render_template("pages/tcc_form.jinja")
+    return render_template("pages/tcc_list.jinja")
+
+#-----------------------------------------------------------
+# new fdgdfgfd
+#-----------------------------------------------------------
+@app.get("/tcc_list")
+def show_tcc_list():
+    return render_template("pages/tcc_list.jinja")
+
+#-----------------------------------------------------------
+# handle the tcc from data
+#-----------------------------------------------------------
+    @app.post("/tcc/new")
+    def process_tcc_form():
+        time = request.form.get("time", "unknown").strip()
+        name = request.form.get("name", "unknown").strip()
+        phone = request.form.get("phone", "unknown").strip()
+        date = request.form.get("date", "unknown").strip()
+        treatment = request.form.get("treatment", "unknown").strip()
+
+#connect to the db
+    with connect_db() as db:
+
+        sql = """
+            INSERT INTO bookings (time, name, phone, date, treatment)
+            VALUES (?, ?, ?, ?, ?)
+
+        """
+        params = (time, name, phone, date, treatment)
+
+    #run the query
+        db.execute(sql,params)
+
+        flash(f"appointment {name} added successfully")
+
+    return redirect("/tcc_list")
+
+
 #-----------------------------------------------------------
 # Home page - Show all notes
 #-----------------------------------------------------------

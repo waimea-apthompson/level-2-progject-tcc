@@ -16,22 +16,64 @@ body{
         
 
     }
-    p{
-        text-shadow: #71caf3;
-        color: #19728d;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    }
+    
     h1{
 
         text-shadow: #71caf3;
         color: #19728d;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: "Brush Script MT", Brush Script Std, cursive; 
+        text-align: center;
+        font-size: 54px;
     }
     .logo {
 
         width: 2rem;
         height: 2rem;
     }
+
+    h2{
+
+        color: #19728d;
+        text-shadow: #71caf3;
+        font-family: "Brush Script MT", Brush Script Std, cursive;
+        font-size: 33px;
+        text-align: center;
+    }
     
 }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        width: 20rem;
+        margin-inline: auto;
+
+        padding: 1rem;
+        border: 2px solid #003B5C;
+        border-radius: 0.5rem;
+        background-color: #D3E1F4;
+        
+
+        label{
+            display: flex;
+            flex-direction: column;
+            
+
+
+        }
+
+        input{
+            background-color: #00A4DF;
+            border-color: #022f49;
+        }
+
+        button{
+
+            margin-top: 0.7rem;
+            background-color: #00A4DF;
+            color: #003B5C;
+            border: 3px solid;
+        }
+    }

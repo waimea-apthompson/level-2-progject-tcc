@@ -7,7 +7,29 @@
 
 {% block content %}
 
-    <h2>the cosmedic clinic</h2>
+    <h2>the cosmedic clinic opintmets</h2>
+
+    <section id="bookings">
+    
+    {% for tcc in bookings %}
+
+
+        <div class="opintment">
+        
+          <h3>{{ tcc.name }}</h3>
+          <p>time: <strong> {{ tcc.time }}</strong></p>
+          <p>date: <strong> {{ tcc.date }}</strong></p>
+          <p>phone: <strong> {{ tcc.phone }}</strong></p>
+          <p>treament: <strong> {{ tcc.treament }}</strong></p>
+        </div>
+    {% else %}
+
+    <p> no opintmets</p>
+
+    {% endfor %}
+
+    
+    </section>
 
    
 {% endblock %}
