@@ -33,7 +33,16 @@ def show_welcome():
 #-----------------------------------------------------------
 @app.get("/tcc/new")
 def show_tcc_form():
-    return render_template("pages/tcc_list.jinja")
+    sql = """
+              SELECT id, 
+              FROM bookings
+              ORDER BY ASC
+          """
+    params = ()
+    peoples = db.execute(sql, params).fetchall()
+
+    return render_template("pages/tcc_list.jinja", person=people)
+
 
 #-----------------------------------------------------------
 # new fdgdfgfd
@@ -45,13 +54,13 @@ def show_tcc_list():
 #-----------------------------------------------------------
 # handle the tcc from data
 #-----------------------------------------------------------
-    @app.post("/tcc/new")
-    def process_tcc_form():
-        time = request.form.get("time", "unknown").strip()
-        name = request.form.get("name", "unknown").strip()
-        phone = request.form.get("phone", "unknown").strip()
-        date = request.form.get("date", "unknown").strip()
-        treatment = request.form.get("treatment", "unknown").strip()
+@app.post("/tcc/new")
+def process_tcc_form():
+    time = request.form.get("time", "unknown").strip()
+    name = request.form.get("name", "unknown").strip()
+    phone = request.form.get("phone", "unknown").strip()
+    date = request.form.get("date", "unknown").strip()
+    treatment = request.form.get("treatment", "unknown").strip()
 
 #connect to the db
     with connect_db() as db:
@@ -66,7 +75,7 @@ def show_tcc_list():
     #run the query
         db.execute(sql,params)
 
-        flash(f"appointment {name} added successfully")
+        flash(f"appointment for {name} added successfully")
 
     return redirect("/tcc_list")
 

@@ -43,11 +43,19 @@
     </label>
 
 
-  <button href="/tcc_list">add appointment</button>
+  <button>add appointment</button>
 
 
     </form>
-
+{% for person in people %}
+    {{ person }}
+SELECT * from people
+<section name = "person_id">
+  <option id ="person.id">
+    person.name
+  </option>
+{% endfor %}
+</section>
    
 {% endblock %}
 

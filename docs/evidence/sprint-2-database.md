@@ -21,13 +21,13 @@ Implement the database, populated with test data. Create queries that retrieve t
     - Etc.
 
 
-## Testing FEATURE NAME HERE
+## Testing going from form to list
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+i am testing the add appointment button it should take me to the lsit of opintments
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+![Alt text](screenshots/going-to-list.gif)
 
-![Placeholder](screenshots/placeholder.png)
 
 ### Changes / Improvements
 
