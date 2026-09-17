@@ -23,25 +23,33 @@ app = Flask(__name__)
 # Welcome page
 #-----------------------------------------------------------
 @app.get("/")
-def show_welcome():
-    
-    return render_template("pages/tcc_form.jinja")
+def new_booking():
+    with connect_db() as db:
+        sql = """
+                SELECT id, name
+                FROM people
+                ORDER BY name ASC
+            """
+        params = ()
+        people = db.execute(sql, params).fetchall()    
+    return render_template("pages/cust_form.jinja", people=people)
     
 
 #-----------------------------------------------------------
 # new opintment
 #-----------------------------------------------------------
-@app.get("/tcc/new")
+@app.get("/list")
 def show_tcc_form():
-    sql = """
-              SELECT id, 
-              FROM bookings
-              ORDER BY ASC
-          """
-    params = ()
-    peoples = db.execute(sql, params).fetchall()
+    with connect_db() as db:
+        sql = """
+                SELECT id, 
+                FROM bookings
+                ORDER BY ASC
+            """
+        params = ()
+        peoples = db.execute(sql, params).fetchall()
 
-    return render_template("pages/tcc_list.jinja", person=people)
+        return render_template("pages/tcc_list.jinja", person=people)
 
 
 #-----------------------------------------------------------
@@ -50,6 +58,43 @@ def show_tcc_form():
 @app.get("/tcc_list")
 def show_tcc_list():
     return render_template("pages/tcc_list.jinja")
+
+#-----------------------------------------------------------
+# handle the existing cust from data
+#-----------------------------------------------------------
+@app.post("/cust/current")
+def process_existing_cust_form():
+    person_id = request.form.get("person_id", 0)
+
+    return render_template("tcc_form", person_id=person_id)
+
+
+#-----------------------------------------------------------
+# handle the new cust from data
+#-----------------------------------------------------------
+@app.post("/cust/new")
+def process_new_cust_form():
+    name = request.form.get("name", "unknown").strip()
+    phone = request.form.get("phone", "unknown").strip()
+
+#connect to the db
+    with connect_db() as db:
+
+        sql = """
+            INSERT INTO people (name, phone)
+            VALUES (?, ?)
+
+        """
+        params = (name, phone)
+
+    #run the query
+        result = db.execute(sql,params)
+        person_id = result.lastrowid
+
+        flash(f"{name} added to our system successfully")
+
+    return render_template("tcc_form", person_id=person_id)
+
 
 #-----------------------------------------------------------
 # handle the tcc from data

@@ -70,11 +70,11 @@ This Figma demo shows the initial layout design for the UI:
 
 ### Testing
 
-Replace this text with notes about what you did to test the UI flow and the outcome of the testing. 
+
 i made it so u cant see what people are getting if you dont have a key for it and a way to enter detales
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+
 i have talked to my mummy and she siad to put a drop down window for what they getting and make it say what kind of trements
 ![Alt text](screenshots/design_v2.jpeg)
 *FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*

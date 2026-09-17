@@ -1,0 +1,53 @@
+{#=====================================================
+  Home page
+=====================================================#}
+
+{% extends 'pages/_base.jinja' %}
+
+
+{% block content %}
+ <h1 class="welcome">Welcome!</h1>
+
+  <section>
+    <h2>Have we seen you before?</h2>
+
+    <form method="post" action="/cust/current">
+    
+      <label>
+        name
+
+        <select name = "person_id">
+          {% for person in people %}
+            <option id ="{{ person.id }}">
+              {{ person.name }}
+            </option>
+          {% endfor %}
+        </select>
+
+      </label>
+
+      <button>Next</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>New customer?</h2>
+
+    <form method="post" action="/cust/new">
+
+      <label>
+        name
+        <input type="text" name="name" required>
+      </label>
+    
+      <label>
+        phone
+        <input type="text" name="phone" required>
+      </label>
+
+      <button>Next</button>
+    </form>
+  </section>
+   
+{% endblock %}
+
