@@ -49,7 +49,7 @@ def show_tcc_form():
         params = ()
         peoples = db.execute(sql, params).fetchall()
 
-        return render_template("pages/tcc_list.jinja", person=people)
+    return render_template("pages/tcc_list.jinja", person=people)
 
 
 #-----------------------------------------------------------
@@ -59,6 +59,13 @@ def show_tcc_form():
 def show_tcc_list():
     return render_template("pages/tcc_list.jinja")
 
+    #-----------------------------------------------------------
+# new fdgdfgfd
+#-----------------------------------------------------------
+@app.post("/tcc_list")
+def pls_show_tcc_list():
+    return render_template("pages/tcc_list.jinja")
+
 #-----------------------------------------------------------
 # handle the existing cust from data
 #-----------------------------------------------------------
@@ -66,7 +73,16 @@ def show_tcc_list():
 def process_existing_cust_form():
     person_id = request.form.get("person_id", 0)
 
-    return render_template("tcc_form", person_id=person_id)
+    with connect_db() as db:
+        sql = """
+                SELECT name
+                FROM people
+                WHERE id=?
+            """
+        params = (person_id,)
+        person = db.execute(sql, params).fetchone()
+
+    return render_template("pages/tcc_form.jinja", person_id=person_id, person_name=person["name"])
 
 
 #-----------------------------------------------------------
@@ -93,7 +109,7 @@ def process_new_cust_form():
 
         flash(f"{name} added to our system successfully")
 
-    return render_template("tcc_form", person_id=person_id)
+    return render_template("pages/tcc_form.jinja", person_id=person_id, person_name=name)
 
 
 #-----------------------------------------------------------

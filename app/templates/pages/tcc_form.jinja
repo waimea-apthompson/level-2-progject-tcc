@@ -7,40 +7,93 @@
 
 {% block content %}
  <h1 class="welcome">Welcome!</h1>
-    <h2>please enter your detailes below</h2>
+    <h2>Ok, {{ person_name }}, what treatment are you here for?</h2>
 
-    <form method="post" action="/tcc/new">
+    <form method="post" action="/tcc_list">
     
-    <label>
-    name
-    <input type="text" name="name" required>
-
-    </label>
-
-
-    <label>
-    phone
-    <input type="text" name="phone number" required>
-
-    </label>
+    <input type="hidden" name="cust_id" value="{{ person_id }}">
     
-    <label>
+    {# <label>
     date
     <input type="text" name="date" required>
 
-    </label>
+    </label> #}
     
     <label>
     time
-    <input type="text" name="time" required>
+    <input 
+      type="time" 
+      name="time" 
+      min="09:00" max="18:00"
+      step="900" 
+      list="interval-steps"
+      required
+    >
 
-    </label>
+    <datalist id="interval-steps">
+      <option value="09:00">
+      <option value="09:15">
+      <option value="09:30">
+      <option value="09:45">
+      
+      <option value="10:00">
+      <option value="10:15">
+      <option value="10:30">
+      <option value="10:45">
+      
+      <option value="11:00">
+      <option value="11:15">
+      <option value="11:30">
+      <option value="11:45">
+      
+      <option value="12:00">
+      <option value="12:15">
+      <option value="12:30">
+      <option value="12:45">
+      
+      <option value="13:00">
+      <option value="13:15">
+      <option value="13:30">
+      <option value="13:45">
+      
+      <option value="14:00">
+      <option value="14:15">
+      <option value="14:30">
+      <option value="14:45">
+      
+      <option value="15:00">
+      <option value="15:15">
+      <option value="15:30">
+      <option value="15:45">
+      
+      <option value="16:00">
+      <option value="16:15">
+      <option value="16:30">
+      <option value="16:45">
+      
+      <option value="17:00">
+      <option value="17:15">
+      <option value="17:30">
+      <option value="17:45">
+      
+      <!-- Add additional intervals as needed -->
+    </datalist>
+
+
+<label for="treatment">Choose a treatment:</label>
+
+<select name="treatment" id="treatment">
+  <option value="lazer">lazer</option>
+  <option value="skin care">skin care</option>
+  <option value="injectabules">injectabules</option>
+</select>
+    {# </label>
 
     <label>
     treament
     <input type="text" name="treatment" required>
     
-    </label>
+    </label> #}
 
 
   <button>add appointment</button>
@@ -49,3 +102,4 @@
     </form>
 
 
+{% endblock %}
