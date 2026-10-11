@@ -38,12 +38,20 @@ def new_booking():
 #-----------------------------------------------------------
 # new opintment
 #-----------------------------------------------------------
-@app.get("/list")
+@app.get("/tcc_list")
 def show_tcc_form():
     with connect_db() as db:
         sql = """
-                SELECT id, 
-                FROM bookings
+                SELECT
+                people.id, 
+                bookings.id, 
+                people.name, 
+                bookings.treatment, 
+                people.phone, 
+                bookings.time,
+                FROM people
+                JOIN bookings ON bookings.people_id = people.id
+                WHERE bookings.id = ?
                 ORDER BY ASC
             """
         params = ()
@@ -52,12 +60,6 @@ def show_tcc_form():
     return render_template("pages/tcc_list.jinja", person=people)
 
 
-#-----------------------------------------------------------
-# new fdgdfgfd
-#-----------------------------------------------------------
-@app.get("/tcc_list")
-def show_tcc_list():
-    return render_template("pages/tcc_list.jinja")
 
     #-----------------------------------------------------------
 # new fdgdfgfd
@@ -65,6 +67,14 @@ def show_tcc_list():
 @app.post("/tcc_list")
 def pls_show_tcc_list():
     return render_template("pages/tcc_list.jinja")
+    
+# #-----------------------------------------------------------
+# # new fdgdfgfd
+# #-----------------------------------------------------------
+# @app.get("/tcc_list")
+# def show_tcc_list():
+    
+#     return render_template("pages/tcc_list.jinja")
 
 #-----------------------------------------------------------
 # handle the existing cust from data

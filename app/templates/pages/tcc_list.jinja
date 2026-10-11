@@ -11,16 +11,16 @@
 
     <section id="bookings">
     
-    {% for tcc in bookings %}
+    {% for booking in bookings %}
 
 
         <div class="opintment">
         
-          <h3>{{ tcc.name }}</h3>
-          <p>time: <strong> {{ tcc.time }}</strong></p>
-          <p>date: <strong> {{ tcc.date }}</strong></p>
-          <p>phone: <strong> {{ tcc.phone }}</strong></p>
-          <p>treament: <strong> {{ tcc.treament }}</strong></p>
+          <h3>{{ people.name }}</h3>
+          <p>time: <strong> {{ bookings.time }}</strong></p>
+          <p>date: <strong> {{ bookings.date }}</strong></p>
+          <p>phone: <strong> {{ people.phone }}</strong></p>
+          <p>treatment: <strong> {{ bookings.treatment }}</strong></p>
         </div>
     {% else %}
 
