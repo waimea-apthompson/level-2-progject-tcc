@@ -39,42 +39,28 @@ def new_booking():
 # new opintment
 #-----------------------------------------------------------
 @app.get("/tcc_list")
-def show_tcc_form():
+def show_tcc_list():
     with connect_db() as db:
         sql = """
                 SELECT
-                people.id, 
-                bookings.id, 
-                people.name, 
-                bookings.treatment, 
-                people.phone, 
-                bookings.time,
-                FROM people
-                JOIN bookings ON bookings.people_id = people.id
-                WHERE bookings.id = ?
-                ORDER BY ASC
+
+                    people.id   AS p_id, 
+                    bookings.id AS b_id, 
+                    people.name, 
+                    bookings.treatment, 
+                    people.phone, 
+                    bookings.time
+
+                    FROM people
+                    JOIN bookings ON bookings.person_id = people.id
+                    ORDER BY bookings.time ASC
             """
         params = ()
-        peoples = db.execute(sql, params).fetchall()
+        bookings = db.execute(sql, params).fetchall()
 
-    return render_template("pages/tcc_list.jinja", person=people)
+    return render_template("pages/tcc_list.jinja", bookings=bookings)
 
 
-
-    #-----------------------------------------------------------
-# new fdgdfgfd
-#-----------------------------------------------------------
-@app.post("/tcc_list")
-def pls_show_tcc_list():
-    return render_template("pages/tcc_list.jinja")
-    
-# #-----------------------------------------------------------
-# # new fdgdfgfd
-# #-----------------------------------------------------------
-# @app.get("/tcc_list")
-# def show_tcc_list():
-    
-#     return render_template("pages/tcc_list.jinja")
 
 #-----------------------------------------------------------
 # handle the existing cust from data
@@ -93,6 +79,28 @@ def process_existing_cust_form():
         person = db.execute(sql, params).fetchone()
 
     return render_template("pages/tcc_form.jinja", person_id=person_id, person_name=person["name"])
+
+
+#-----------------------------------------------------------
+# handle the treatment booking from data
+#-----------------------------------------------------------
+@app.post("/treatment/new")
+def process_treatment_form():
+    person_id = request.form.get("cust_id", 0)
+    time = request.form.get("time", "unknown").strip()
+    treatment = request.form.get("treatment", "unknown").strip()
+    with connect_db() as db:
+        sql = """
+                INSERT INTO bookings (person_id, time, treatment)
+                VALUES (?, ?, ?)
+                
+            """
+        params = (person_id, time, treatment)
+        db.execute(sql, params)
+
+        flash("Appointment made", "success")
+
+    return redirect("/tcc_list")
 
 
 #-----------------------------------------------------------

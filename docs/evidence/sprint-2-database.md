@@ -23,25 +23,26 @@ Implement the database, populated with test data. Create queries that retrieve t
 
 ## Testing going from form to list
 
-i am testing the add appointment button it should take me to the lsit of opintments
+show all bookings
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-![Alt text](screenshots/going-to-list.gif)
+![Alt text](screenshots/showbookings_buuton.gif)
 
 
 ### Changes / Improvements
 
-i had to post the list for some reson but it finaly got me to the list and i add a new preson list and been here befor list with a date and what tretment list has well
+put the buttons in middle and gave a nice coulor bar there too
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**![Alt text](screenshots/going-to-list-2.gif)
+
+**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**![Alt text](screenshots/showbookings_buuton-good.gif)
 
 
 ## Testing showing opintments
 
-i am testing that the opitment shows the one i just added and all the other ones
+Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
-![Alt text](screenshots/show-openments.gif)
+
 ### Changes / Improvements
 
 Replace this text with notes any improvements you made as a result of the testing.

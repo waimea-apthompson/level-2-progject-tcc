@@ -46,7 +46,6 @@ class bookings_table:
         CREATE TABLE bookings (
             id          INTEGER PRIMARY KEY AUTOINCREMENT,
             person_id   INTEGER NOT NULL,
-            date        TEXT NOT NULL,
             time        TEXT NOT NULL,
             treatment   TEXT NOT NULL,
 
@@ -55,13 +54,13 @@ class bookings_table:
     """
 
     SEED_DATA = """
-        INSERT INTO bookings (person_id, date, time, treatment)
+        INSERT INTO bookings (person_id, time, treatment)
         VALUES
-            (1, "2026-11-01", "16:00", "Laser"),
-            (1, "2026-18-01", "15:00", "Laser follow-up"),
-            (2, "2026-19-01", "16:00", "Laser"),
-            (3, "2026-09-01", "16:00", "Laser"),
-            (2, "2026-12-01", "16:00", "Laser")
+            (1, "16:00", "Laser"),
+            (1, "15:00", "Laser follow-up"),
+            (2, "16:00", "Laser"),
+            (3, "16:00", "Laser"),
+            (2, "16:00", "Laser")
     """
 
 

@@ -10,13 +10,28 @@ body{
         width: 2rem;
         text-shadow: rgb(88, 182, 240);
         color: #196588;
+    
 
         
 
         
 
     }
+   
     
+    nav {
+       
+        gap: 1rem;
+        text-align: center;
+        background-color: #9ebfe6;
+        padding: 1rem;
+        box-shadow: #425e6e;
+
+        a {
+            
+            color: #2f78cc;
+        }
+    }
     h1{
 
         text-shadow: #71caf3;
@@ -27,9 +42,12 @@ body{
         padding: 0.7rem;
     }
     .logo {
-
+        
         width: 2rem;
         height: 2rem;
+        
+        
+        
     }
 
     h2{
@@ -84,3 +102,10 @@ body{
 
         }
     }
+    list{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    
