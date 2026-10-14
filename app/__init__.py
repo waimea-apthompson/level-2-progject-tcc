@@ -159,6 +159,24 @@ def process_tcc_form():
     return redirect("/tcc_list")
 
 
+
+#-----------------------------------------------------------
+# Creature deletson- delate creature via id
+#-----------------------------------------------------------
+@app.get("/booking/<int:id>/delete")
+def delete_a_bookings(id):
+    with connect_db() as db:
+        # delete the creature using its id
+        sql = """
+            DELETE FROM bookings
+            WHERE id=?
+        """
+        params = (id,)
+        db.execute(sql, params)
+
+# back to list
+        flash("booking deleted", "success")
+        return redirect("/tcc_list")
 #-----------------------------------------------------------
 # Home page - Show all notes
 #-----------------------------------------------------------

@@ -7,7 +7,7 @@
 
 {% block content %}
 
-    <h2>the cosmedic clinic opintmets</h2>
+    <h1>the cosmedic clinic opintmets</h1>
 
     <section id="bookings">
     
@@ -16,10 +16,16 @@
 
         <div class="opintment">
         
-          <h3> {{ booking.name }} </h3>
-          <p>time: <strong> {{ booking.time }}</strong></p>
-          <p>phone: <strong> {{ booking.phone }}</strong></p>
-          <p>treatment: <strong> {{ booking.treatment }}</strong></p>
+          <h2> {{ booking.name }}</h2> 
+
+         <h3>time: </h3> <p>{{ booking.time }}</p>
+
+          <h3>phone: </h3> <p>{{ booking.phone }}</p>
+
+          <h3>treatment: </h3> <p>{{ booking.treatment }}</p>
+
+          <a href="/booking/{{ booking.b_id }}/delete">delete</a>
+
         </div>
     {% else %}
 
