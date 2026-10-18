@@ -105,25 +105,28 @@ body{
     .opintment{
         display: flex;
         flex-direction: row;
-        border: 3px solid #055481;
+        border: 3px solid #022f49;
         padding: 1rem;
         margin: 2rem;
         border-radius: 2rem;
         font-family: 'Courier New', Courier, monospace;
         align-items: center;
         gap: 1rem;
+        background-color: #9ebfe6;
+       
+       
         
 
         h3{
-            color: rgb(109, 201, 230);
+            color: #ebf3fd;
         }
         h2{
-            color: rgb(0, 0, 0);
+            color: #196588;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+    
     }
-    
-    
-    
 
+    
+    
     
