@@ -35,7 +35,7 @@ i had to post the list for some reson but it finaly got me to the list and i add
 
 ## Testing showing opintments
 
-i am testing that the opitment shows the one i just added and all the other ones
+i am testing that the appointment shows the one i just added and all the other ones
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
 ![Alt text](screenshots/show-openments.gif)

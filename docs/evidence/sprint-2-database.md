@@ -31,13 +31,13 @@ show all bookings
 
 ### Changes / Improvements
 
-put the buttons in middle and gave a nice coulor bar there too
+put the buttons in middle and gave a nice color bar there too
 
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**![Alt text](screenshots/showbookings_buuton-good.gif)
 
 
-## Testing showing opintments
+## Testing showing appointments
 
 Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
 
@@ -67,6 +67,5 @@ Replace this text with notes any improvements you made as a result of the testin
 
 
 ## Sprint Review
-
-Replace this text with a statement about how the sprint has moved the project forward - key success point, any things that didn't go so well, etc.
+this sprint move my project forward with me having to finger out what of my to tables go were and were they don't and of course spelling was annoying to deal with but with some help i made it throw
 

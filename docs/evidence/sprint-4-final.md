@@ -14,46 +14,42 @@ Develop the system until it is fully featured, with a refined UI and it satisfie
 - Perform final, full-system testing
 
 
-## Testing FEATURE NAME HERE
+## Aesthetics
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+i put some blue colors to match tcc witch looks ok but some of the stuff was not readable and it look like colors were missing
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
 
-![Placeholder](screenshots/placeholder.png)
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
-
+i have keeped the same colors for my website i have used colors that look like the comedic clinic and with some that aren't there to make some stuff pop more and everything is readable
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+![Alt text](screenshots/aesthetics.gif)
 
+## uesbuilty
 
-## Testing FEATURE NAME HERE
+i had it so there was one way to enter ur name and phone treatment and time but not a way to know who was all ready there
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
-
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+i change it so that there was see bookings and a home button at the top and for the from there are now if u been here and if u new person then after that they both take you to a from that ask what time and what you want
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**![Alt text](screenshots/uesbuilty.gif)
 
 
-## Testing FEATURE NAME HERE
+## Testing  End User
 
-Replace this text with notes about what you are testing, how you tested it, and the outcome of the testing
+with colors i think they look great but did need some changes and it dose have what my mum wanted it to have with some other stuff need to be added
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+
 
 ### Changes / Improvements
 
-Replace this text with notes any improvements you made as a result of the testing.
+i added what need to go in and it would be something that would be easy for the tcc workers to use
 
 **PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
-
+![Alt text](<screenshots/ End-User.gif>)
 
 ## ETC...
 

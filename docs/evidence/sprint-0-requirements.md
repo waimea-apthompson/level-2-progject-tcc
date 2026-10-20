@@ -2,12 +2,12 @@
 
 ## Identified Problem or Need
 
-traking who comes in for walk ins and bookings
+tracking who comes in for walk ins and bookings
 
 
 ## End-User Requirements
 
-my mum whats to keep it simpale enought to use match there colours .
+my mum whats to keep it simple enough to use match there colors .
 
 
 ## Proposed Solution
@@ -17,7 +17,7 @@ a list of names, time they came in, what they getting and a way to let the user 
 
 # Relevant Implications
 
-## NAME OF IMPLICATION 1
+## privacy
 
 privacy, keeping data from the public
 
@@ -31,7 +31,7 @@ make a button to show peoples detailes like there is a box with the person name 
 
 
 
-## NAME OF IMPLICATION 2
+## Aesthetics
 
 Aesthetics, coulor nicely good text good placements
 ### Relevance to the System
@@ -44,7 +44,7 @@ try and get there colours acureit and in good places and get the logo visbul and
 
 
 
-## NAME OF IMPLICATION 3
+## uesbuilty
 
 uesbuilty, keeping it good to use
 
@@ -58,7 +58,7 @@ make buttons big and easy to know what they do a back arrow some icons that mean
 
 
 
-## NAME OF IMPLICATION 4
+## End User
 
  End User, trying to get it to what they what
 
@@ -71,7 +71,7 @@ this whould keep it closer to tcc and how it whould run, make it work for i pads
 
 
 
-## NAME OF IMPLICATION 5
+## Functionality
  Functionality, make sure it did not break
 
 ### Relevance to the System
