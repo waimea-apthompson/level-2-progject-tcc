@@ -161,12 +161,12 @@ def process_tcc_form():
 
 
 #-----------------------------------------------------------
-# Creature deletson- delate creature via id
+# opintment deletson- delate opintment via id
 #-----------------------------------------------------------
 @app.get("/booking/<int:id>/delete")
 def delete_a_bookings(id):
     with connect_db() as db:
-        # delete the creature using its id
+        # delete the opintment using its id
         sql = """
             DELETE FROM bookings
             WHERE id=?
