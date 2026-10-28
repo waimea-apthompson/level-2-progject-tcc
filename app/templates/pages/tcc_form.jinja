@@ -7,17 +7,14 @@
 
 {% block content %}
  <h1 class="welcome">Welcome!</h1>
+ {# asking what they what #}
     <h2>Ok, {{ person_name }}, what treatment are you here for?</h2>
 
     <form method="post" action="/treatment/new">
     
     <input type="hidden" name="cust_id" value="{{ person_id }}">
     
-    {# <label>
-    date
-    <input type="text" name="date" required>
-
-    </label> #}
+   
     
     <label>
     time
@@ -29,7 +26,7 @@
       list="interval-steps"
       required
     >
-
+{# #all the times that are availbull #}
     <datalist id="interval-steps">
       <option value="09:00">
       <option value="09:15">
@@ -79,7 +76,7 @@
       <!-- Add additional intervals as needed -->
     </datalist>
 
-
+{# what they could get #}
 <label for="treatment">Choose a treatment:</label>
 
 <select name="treatment" id="treatment">
@@ -87,13 +84,7 @@
   <option value="skin care">skin care</option>
   <option value="injectabules">injectabules</option>
 </select>
-    {# </label>
-
-    <label>
-    treament
-    <input type="text" name="treatment" required>
     
-    </label> #}
 
 
   <button>add appointment</button>

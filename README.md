@@ -4,12 +4,12 @@ by austin thompson
 
 ## Project Description
 
-This is an app that ...
+This is an app that hadles walk in at the cosmedic clink and gets them a opintment for thta day
 
 The app has the following key features:
-- Feature one
-- Feature two
-- Feature three
+- Feature one having a list for costmers who came back
+- Feature two having a new form for new poeple to enter detailes
+- Feature three having times from 9 am to 5:45 pm
 - ...
 
 

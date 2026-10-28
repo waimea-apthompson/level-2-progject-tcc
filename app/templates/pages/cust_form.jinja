@@ -9,13 +9,14 @@
  <h1 class="welcome">Welcome!</h1>
 
   <section>
+  {# people who have come back #}
     <h2>Have we seen you before?</h2>
 
     <form method="post" action="/cust/current">
     
       <label>
         name
-
+{# make sure its them #}
         <select name = "person_id">
           {% for person in people %}
             <option value="{{ person.id }}">
@@ -31,10 +32,11 @@
   </section>
 
   <section>
+  {# new people  #}
     <h2>New customer?</h2>
 
     <form method="post" action="/cust/new">
-
+{# what i need them to put in for info #}
       <label>
         name
         <input type="text" name="name" required>

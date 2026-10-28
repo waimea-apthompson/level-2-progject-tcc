@@ -102,7 +102,7 @@ Use advanced techniques to develop a digital media outcome means that, taking in
 
 3. You must apply appropriate data integrity and testing procedures:
    - [ x] All webpage text should be checked for **accuracy** (e.g. spell-checked)
-   - [ ] Any **data shown is as expected** (i.e. matches database / calculated values)
+   - [ x] Any **data shown is as expected** (i.e. matches database / calculated values)
 
 4. You need to explain and address relevant implications:
    - [x ] Identify the **implications most relevant** to your project
@@ -118,15 +118,15 @@ Use advanced techniques to develop a digital media outcome means that, taking in
 Use advanced techniques to develop an informed digital media outcome means **all the criteria for Achieved**, plus:
 
 1. You should use information from testing procedures to improve the quality of your web site:
-   - [ ] Show **evidence of your testing**, particularly with end-users
-   - [ ] Show the **improvements made** as a result
+   - [ x] Show **evidence of your testing**, particularly with end-users
+   - [ x] Show the **improvements made** as a result
 
 2. You have used testing tools to help improve your web site:
    - [ ] You have used **code validation** tools for generated HTML and CSS
-   - [ ] You have **fixed any issues** identified
+   - [x ] You have **fixed any issues** identified
 
 3. You need to address relevant implications:
-   - [ ] At the end of your project, you need to **explain what you did in your project to address each implication**
+   - [ x] At the end of your project, you need to **explain what you did in your project to address each implication**
 
 
 ## Excellence Criteria
