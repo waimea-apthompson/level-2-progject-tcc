@@ -30,36 +30,36 @@ i am testing the add appointment button it should take me to the lsit of opintme
 
 i had to post the list for some reson but it finaly got me to the list and i add a new preson list and been here befor list with a date and what tretment list has well
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**![Alt text](screenshots/going-to-list-2.gif)
+![Alt text](screenshots/going-to-list-2.gif)
 
 
 ## Testing showing opintments
 
 i am testing that the appointment shows the one i just added and all the other ones
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+
 ![Alt text](screenshots/show-openments.gif)
 ### Changes / Improvements
 
 we made a new qurray called treatment/new added the time and treatment and the hiddin cust_id and made it so that it wont get confuised with the bookings_id and preson_id
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+
 ![Alt text](screenshots/show-openments-works.gif)
 
 ## Testing teel new cust they be added to are data base
 
 i what to let the new cust that they are now in are data base with a little messege
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+
 ![Alt text](screenshots/cust-added-to-database.gif)
 ### Changes / Improvements
 
 we put a little flash messge saying they have been added succsfuly to the data base
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**
+
 ![Alt text](screenshots/cust-added-to-database-working.gif)
 
-## ETC...
+
 
 
 ## Sprint Review

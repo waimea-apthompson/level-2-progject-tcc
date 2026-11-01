@@ -25,7 +25,7 @@ Implement the database, populated with test data. Create queries that retrieve t
 
 show all bookings
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE TESTING HERE**
+
 ![Alt text](screenshots/showbookings_buuton.gif)
 
 
@@ -34,7 +34,7 @@ show all bookings
 put the buttons in middle and gave a nice color bar there too
 
 
-**PLACE SCREENSHOTS AND/OR ANIMATED GIFS OF THE IMPROVED SYSTEM HERE**![Alt text](screenshots/showbookings_buuton-good.gif)
+![Alt text](screenshots/showbookings_buuton-good.gif)
 
 
 

@@ -57,8 +57,6 @@ i made some improvments by putting arrows and text in boxes
 
 ![Alt text](screenshots/design_v0.5.png)
 
-*IMPROVED FIGMA FLOW - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
-
 
 ## Initial UI Prototype
 
@@ -66,7 +64,7 @@ The next stage of prototyping was to develop the layout for each screen of the U
 
 This Figma demo shows the initial layout design for the UI:
 ![Alt text](screenshots/design_v1.png)
-*FIGMA PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
+
 
 ### Testing
 
@@ -77,7 +75,6 @@ i made it so u cant see what people are getting if you dont have a key for it an
 
 i have talked to my mummy and she siad to put a drop down window for what they getting and make it say what kind of trements
 ![Alt text](screenshots/design_v2.jpeg)
-*FIGMA IMPROVED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
 
 ## Refined UI Prototype
@@ -87,7 +84,6 @@ my mummy siad its fine but change some of the colours around and diffrent font a
 This Figma demo shows the UI with refinements applied:
 ![Alt text](screenshots/design_v3.png)
 
-*FIGMA REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
 ### Testing
 
@@ -97,7 +93,6 @@ i made it so some but are typeabull and some take you back amd forth frome the p
 
 i made it so the treament box is a drop down box and not a typing one
 
-*FIGMA IMPROVED REFINED PROTOTYPE - PLACE THE FIGMA EMBED CODE HERE - MAKE SURE IT IS SET SO THAT EVERYONE CAN ACCESS IT*
 
 
 ## Sprint Review
