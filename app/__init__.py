@@ -23,6 +23,7 @@ app = Flask(__name__)
 # Welcome page
 #-----------------------------------------------------------
 @app.get("/")
+#new booking
 def new_booking():
     #connect to the db
     with connect_db() as db:
@@ -41,6 +42,7 @@ def new_booking():
 # new opintment
 #-----------------------------------------------------------
 @app.get("/tcc_list")
+#show the list
 def show_tcc_list():
     #connect to the db
     with connect_db() as db:
@@ -70,6 +72,7 @@ def show_tcc_list():
 # handle the existing cust from data
 #-----------------------------------------------------------
 @app.post("/cust/current")
+#old custmer form
 def process_existing_cust_form():
     person_id = request.form.get("person_id", 0)
 
@@ -92,6 +95,7 @@ def process_existing_cust_form():
 # handle the treatment booking from data
 #-----------------------------------------------------------
 @app.post("/treatment/new")
+#new treamets
 def process_treatment_form():
     person_id = request.form.get("cust_id", 0)
     time = request.form.get("time", "unknown").strip()
@@ -116,6 +120,7 @@ def process_treatment_form():
 # handle the new cust from data
 #-----------------------------------------------------------
 @app.post("/cust/new")
+#new custmers
 def process_new_cust_form():
     name = request.form.get("name", "unknown").strip()
     phone = request.form.get("phone", "unknown").strip()
@@ -173,6 +178,7 @@ def process_tcc_form():
 # opintment deletson- delate opintment via id
 #-----------------------------------------------------------
 @app.get("/booking/<int:id>/delete")
+#get rid of a booking
 def delete_a_bookings(id):
 
     #connect to the db

@@ -7,9 +7,11 @@ by austin thompson
 This is an app that hadles walk in at the cosmedic clink and gets them a opintment for thta day
 
 The app has the following key features:
-- Feature one having a list for costmers who came back
-- Feature two having a new form for new poeple to enter detailes
-- Feature three having times from 9 am to 5:45 pm
+- Feature one having a list for costmers who came back i have a drop down box that shows a list of names and ask if thye have been here befor then you tap ur name and it has your phone number ready for you i also have a list for people who have not been here befor where you enter your name and phone number
+
+- Feature two i have a list that ask whats you what and what time you can get lazer skin care and injectabuls
+
+- Feature three having times from 9 am to 5:45 pm with this you can chose every 15 from 9:00am till 5:45pm
 - ...
 
 
@@ -19,8 +21,9 @@ https://level-2-progject-tcc.onrender.com/
 
 
 ## Supporting Documents
+all documetion is hosted on [Github Pages] https://github.com/waimea-apthompson/level-2-progject-tcc
 
-Task Instructions:
+Task Instructions: 
 - [Instruction documents](docs/instructions/)
 
 Project Evidence
