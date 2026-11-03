@@ -25,7 +25,7 @@ https://level-2-progject-tcc.onrender.com/
 
 *For easier reading, the docs are hosted as a [GH Pages site](https://waimea-apthompson.github.io/level-2-progject-tcc/)*
 
-all documetion is hosted on [Github Pages] https://github.com/waimea-apthompson/level-2-progject-tcc
+all documetion is hosted on [Github Pages](https://github.com/waimea-apthompson/level-2-progject-tcc)
 
 Task Instructions: 
 - [Instruction documents](docs/instructions/)
