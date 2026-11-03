@@ -7,6 +7,7 @@ by austin thompson
 This is an app that hadles walk in at the cosmedic clink and gets them a opintment for thta day
 
 The app has the following key features:
+
 - Feature one having a list for costmers who came back i have a drop down box that shows a list of names and ask if thye have been here befor then you tap ur name and it has your phone number ready for you i also have a list for people who have not been here befor where you enter your name and phone number
 
 - Feature two i have a list that ask whats you what and what time you can get lazer skin care and injectabuls
@@ -17,10 +18,13 @@ The app has the following key features:
 
 
 ## live sight 
-https://level-2-progject-tcc.onrender.com/
+https://level-2-progject-tcc.onrender.com/   
 
 
 ## Supporting Documents
+
+*For easier reading, the docs are hosted as a [GH Pages site](https://waimea-apthompson.github.io/level-2-progject-tcc/)*
+
 all documetion is hosted on [Github Pages] https://github.com/waimea-apthompson/level-2-progject-tcc
 
 Task Instructions: 
@@ -44,7 +48,6 @@ Project Evidence
 - [SQLite](https://sqlite.org/) for the database
 - [Jinja2](https://jinja.palletsprojects.com/templates/) for page templating
 
-*For easier reading, the docs are hosted as a [GH Pages site](https://waimea-apthompson.github.io/level-2-progject-tcc/)*
 
 
 ## Project Structure
